@@ -1,6 +1,6 @@
-# OpenClaw 配置备份（包含敏感信息）
-OpenClaw_Configuration/memory/
-
-# 其他可能包含敏感信息的文件
+# 日志文件
 *.log
 *.jsonl
+
+# Dreaming 临时文件
+.dreams/

@@ -1,0 +1,14 @@
+[
+  {
+    "timestamp": "2026-04-22T13:14:00+08:00",
+    "source": "heartbeat",
+    "model": "thirty/gpt-5.4",
+    "tokens_in": 2800,
+    "tokens_out": 313,
+    "cost_usd": 0.0,
+    "cache_hit_percent": 81,
+    "context_percent": 7,
+    "session": "agent:main:main:heartbeat",
+    "note": "heartbeat token usage snapshot recorded via session_status"
+  }
+]
