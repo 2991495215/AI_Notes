@@ -51,52 +51,6 @@ AI_Notes/
 
 ---
 
-## 定时同步机制
-
-### 主控 Agent（zin-linux）
-
-自动执行：
-- **每 6 小时**：Git 同步 + memory 备份
-- **每日**：整合各 agent 日记到 `10_日记/`
-
-### 其他 Agent
-
-需要自行创建定时任务：
-
-```bash
-# 创建同步脚本
-cat > ~/sync.sh << 'EOF'
-#!/bin/bash
-cd /root/openclaw-workspace/AI_Notes
-git pull origin main
-rsync -av --update /root/openclaw-workspace/memory/ /root/openclaw-workspace/AI_Notes/OpenClaw_Configuration/memory/
-git add .
-git commit -m "定时同步 $(date +%Y-%m-%d_%H:%M)" 2>/dev/null
-git push origin main
-EOF
-
-chmod +x ~/sync.sh
-
-# 添加 cron（每6小时）
-(crontab -l 2>/dev/null; echo "0 */6 * * * ~/sync.sh") | crontab -
-```
-
----
-
-## 10_日记 整理权限
-
-### 主控 Agent（zin-linux）
-- ✅ 可自动归纳整理各 agent 的日记
-- ✅ 可创建、修改 `10_日记/` 下的文件
-- ✅ 每日自动整合各 agent 内容
-
-### 其他 Agent
-- ❌ 默认不可整理 `10_日记/`
-- ✅ 需要用户明确授权后才可整理
-- ✅ 可在自己目录下写日记，等待主控整合
-
----
-
 ## 新 Agent 注册
 
 ### 1. 创建目录
@@ -131,7 +85,103 @@ openclaw gateway restart
 ```
 
 ### 4. 设置定时同步
-参考上面的「定时同步机制」创建自己的 cron 任务。
+参考下面的「定时同步机制」创建自己的 cron 任务。
+
+### 5. 配置 SSH 认证
+**必须**：将 SSH 公钥添加到 GitHub，否则无法推送。
+
+```bash
+# 查看公钥
+cat ~/.ssh/id_rsa.pub
+```
+
+到 GitHub → Settings → SSH and GPG keys → New SSH key，粘贴公钥。
+
+---
+
+## 定时同步机制
+
+### 主控 Agent（zin-linux）
+
+自动执行：
+- **每 6 小时**：Git 同步 + memory 备份
+- **每日**：整合各 agent 日记到 `10_日记/`
+
+### 其他 Agent
+
+需要自行创建定时任务：
+
+```bash
+# 创建同步脚本
+cat > ~/sync.sh << 'EOF'
+#!/bin/bash
+cd /root/openclaw-workspace/AI_Notes
+
+# Git 拉取
+git pull origin main
+
+# 同步 memory
+rsync -av --update /root/openclaw-workspace/memory/ /root/openclaw-workspace/AI_Notes/OpenClaw_Configuration/memory/
+
+# 清理敏感信息
+cd /root/openclaw-workspace/AI_Notes/OpenClaw_Configuration/memory
+for file in *.md; do
+  sed -i 's/"apiKey": "[^"]*"/"apiKey": "***REDACTED***"/g' "$file" 2>/dev/null
+  sed -i 's/sk-[a-zA-Z0-9]\{20,\}/***REDACTED***/g' "$file" 2>/dev/null
+  sed -i 's/ctx7sk[a-zA-Z0-9]*/***REDACTED***/g' "$file" 2>/dev/null
+  sed -i 's/"private_key": "[^"]*"/"private_key": "***REDACTED***"/g' "$file" 2>/dev/null
+  sed -i 's/"private_key_id": "[^"]*"/"private_key_id": "***REDACTED***"/g' "$file" 2>/dev/null
+  sed -i 's/"client_email": "[^"]*"/"client_email": "***REDACTED***"/g' "$file" 2>/dev/null
+  sed -i 's/"client_id": "[^"]*"/"client_id": "***REDACTED***"/g' "$file" 2>/dev/null
+done
+
+cd /root/openclaw-workspace/AI_Notes
+
+# Git 推送
+git add .
+git commit -m "定时同步 $(date +%Y-%m-%d_%H:%M)" 2>/dev/null
+git push origin main
+EOF
+
+chmod +x ~/sync.sh
+
+# 添加 cron（每6小时）
+(crontab -l 2>/dev/null; echo "0 */6 * * * ~/sync.sh") | crontab -
+```
+
+---
+
+## 敏感信息清理
+
+**重要**：同步脚本会自动清理以下敏感信息：
+
+- API keys（`sk-xxx`、`apiKey: xxx`）
+- Google Cloud credentials（`private_key`、`client_email`）
+- 其他 token 和密钥
+
+**如果你发给 agent 包含敏感信息的内容**：
+1. 同步脚本会自动清理
+2. 推送到 GitHub 前会检查
+3. 如果被 GitHub 拒绝，说明还有敏感信息，需要手动清理
+
+**安全建议**：
+- 不要直接发完整的 API key 给 agent
+- 需要时可以说"我的 API key 是 sk-xxx"，但要意识到会被清理
+- 重要密钥不要存在 memory 文件里
+
+---
+
+## 10_日记 整理权限
+
+### 主控 Agent（zin-linux）
+- ✅ 可自动归纳整理各 agent 的日记
+- ✅ 可创建、修改 `10_日记/` 下的文件
+- ✅ 每日自动整合各 agent 内容
+
+### 其他 Agent
+- ❌ 默认不可整理 `10_日记/`
+- ✅ 需要用户明确授权后才可整理
+- ✅ 可在自己目录下写日记，等待主控整合
 
 ---
 
@@ -171,6 +221,10 @@ rsync -av --update /root/openclaw-workspace/memory/ /root/openclaw-workspace/AI_
 **Q: 我的日记什么时候被整合？** → 主控每 6 小时自动整合
 
 **Q: 我想自己整理日记？** → 需要用户授权
+
+**Q: Git 推送失败？** → 检查 SSH 认证：`ssh -T git@github.com`
+
+**Q: 被 GitHub 拒绝推送？** → 可能有敏感信息，需要清理
 
 ---
 
