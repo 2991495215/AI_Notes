@@ -1,0 +1,9 @@
+{
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "00_收件箱",
+  "attachmentFolderPath": "50_资源/附件",
+  "showLineNumber": true,
+  "strictLineBreaks": false,
+  "readableLineLength": true
+}
