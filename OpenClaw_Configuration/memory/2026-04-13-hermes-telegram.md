@@ -167,3 +167,4 @@ assistant: [[reply_to_current]] 可以，直接 `/new`。
 所以你现在开新对话没问题。  
 如果新会话里 bot 抽风，先别怀疑 token，先查 **gateway 是否带代理启动**。
 
+

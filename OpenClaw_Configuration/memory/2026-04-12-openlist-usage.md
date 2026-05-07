@@ -223,3 +223,4 @@ Sender (untrusted metadata):
 好我准备/new了
 assistant: [[reply_to_current]] 行，去吧。你 /new 之后我会按新的会话继续接。
 
+

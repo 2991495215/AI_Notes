@@ -110,3 +110,4 @@ assistant: [[reply_to_current]] 算正常，但**“正常”不等于“理想�
 - **给你一套 Hermes agent 的省 token 配置方案**  
   包括模型选择、会话切分、日志裁剪、记忆策略。
 
+
