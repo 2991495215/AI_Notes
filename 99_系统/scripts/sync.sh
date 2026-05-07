@@ -5,10 +5,10 @@ cd /root/openclaw-workspace/AI_Notes
 git pull origin main
 
 # 同步 memory
-rsync -av --update /root/openclaw-workspace/memory/ /root/openclaw-workspace/AI_Notes/OpenClaw_Configuration/memory/
+rsync -av --update /root/openclaw-workspace/memory/ /root/AI_Notes/OpenClaw_Configuration/zin-linux/memory/
 
 # 清理敏感信息
-cd /root/openclaw-workspace/AI_Notes/OpenClaw_Configuration/memory
+cd /root/AI_Notes/OpenClaw_Configuration/zin-linux/memory
 for file in *.md; do
   sed -i 's/"apiKey": "[^"]*"/"apiKey": "***REDACTED***"/g' "$file" 2>/dev/null
   sed -i 's/sk-[a-zA-Z0-9]\{20,\}/***REDACTED***/g' "$file" 2>/dev/null
