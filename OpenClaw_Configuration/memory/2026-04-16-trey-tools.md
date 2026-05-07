@@ -68,3 +68,4 @@ assistant: [[reply_to_current]] **没有。** 现在 `/root/openclaw-workspace/T
 它目前记在长期记忆和日志里，不在工具环境表里。
 
 
+
