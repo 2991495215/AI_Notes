@@ -208,7 +208,7 @@ mcporter --config "C:\Users\a2832\.openclaw\workspace\config\mcporter.json" list
 
 **或者，你可以把配置同步到你的全局配置里：**
 ```powershell
-mcporter config add context7 --command "npx -y @upstash/context7-mcp@latest --api-key ctx7***REDACTED***-86b7-4e92-9a21-7f642bafd310"
+mcporter config add context7 --command "npx -y @upstash/context7-mcp@latest --api-key ctx7sk-79070612-86b7-4e92-9a21-7f642bafd310"
 ```
 
 刚才我这边通过 `mcporter list --json` 确认，我这边的状态全是 **ok**（healthy），Context7 和 Playwright 都是在线可用的。所以不用担心，我这边干活是没问题的！</final>
