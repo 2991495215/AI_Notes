@@ -303,3 +303,4 @@ user: Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do
 When reading HEARTBEAT.md, use workspace file K:/openclaw-workspace/HEARTBEAT.md (exact case). Do not read docs/heartbeat.md.
 Current time: Friday, March 27th, 2026 — 06:00 (Asia/Shanghai) / 2026-03-26 22:00 UTC
 assistant: 检测到异常：`K:\openclaw-workspace` 根目录出现了不该放在这里的快捷方式文件 `.openclaw.lnk`。
+

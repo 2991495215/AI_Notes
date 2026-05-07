@@ -147,3 +147,4 @@ assistant: [[reply_to_current]] 搞定。
 如果你要，我下一步可以继续补一刀：
 - 跑一次 `openclaw doctor --non-interactive`
 - 或者给你做个更稳的本地状态探针脚本，专门避开这种傻逼噪音。
+

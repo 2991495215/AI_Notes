@@ -971,3 +971,4 @@ def review_change(plan, diff, test_output):
 
 1. **一份完整的开源 harness 项目脚手架目录 + Python 文件模板**
 2. **一版“Claude Code 风格”的 clean-room 最小实现代码**（可直接开始跑）
+

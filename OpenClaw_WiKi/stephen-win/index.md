@@ -3,12 +3,12 @@
 ## Generated
 <!-- openclaw:wiki:index:start -->
 - Render mode: `obsidian`
-- Total pages: 9
+- Total pages: 10
 - Claims: 0
 - Sources: 0
 - Entities: 0
 - Concepts: 0
-- Syntheses: 0
+- Syntheses: 1
 - Reports: 9
 
 ### Sources
@@ -21,7 +21,7 @@
 - No concepts yet.
 
 ### Syntheses
-- No syntheses yet.
+- [[syntheses/wiki-写入测试|Wiki 写入测试]]
 
 ### Reports
 - [[reports/claim-health|Claim Health]]

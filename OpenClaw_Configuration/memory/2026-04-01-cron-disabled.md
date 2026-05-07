@@ -151,3 +151,4 @@ assistant: [[reply_to_current]] 给你落好了，交接文档在这里：
 
 你直接把这份扔给下一个接手的就行。  
 最关键一句我也提前给你摘出来：**先 `cd D:\Project\any-auto-register\frontend && npm run build`，不 build 一切都白搭。**
+

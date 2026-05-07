@@ -14,3 +14,4 @@
 - 2026-04-26: heartbeat checked
 - 2026-04-29 18:43 Asia/Shanghai heartbeat executed; session token usage: 7.6k in / 467 out, cache 45%, context 12%, cost $0.0000.
 - 2026-05-03 07:13 Asia/Shanghai heartbeat executed; session token usage: 30k in / 1.0k out, cache 34%, context 8%, cost $0.0000.
+

@@ -270,3 +270,4 @@ assistant: [[reply_to_current]] 已经直接删掉了。
 - 其他你装的功能型 skills
 
 **`self-improving` 和 `memory-manager` 已经不是“停用”，而是物理删除。**
+

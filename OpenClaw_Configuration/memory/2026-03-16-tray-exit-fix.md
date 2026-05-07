@@ -123,3 +123,4 @@ assistant: 搞定！
 最终版本的 `openclaw_launcher.exe` 已经成功生成，位于 `D:\Project\OpenClaw-Bot` 文件夹。
 
 这次它应该可以完美运行了。请测试一下，如果还有问题，`K:\Scripts\openclaw_launcher.log` 中的日志会告诉我们答案。
+

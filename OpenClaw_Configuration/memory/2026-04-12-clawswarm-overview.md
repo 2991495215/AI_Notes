@@ -505,3 +505,4 @@ assistant: [[reply_to_current]] 对。**不是 OpenClaw 插件。**
 所以结论就一句：
 
 **ClawSwarm 不是装在 OpenClaw 里面用的插件，而是一个和 OpenClaw 有点像、但独立存在的 agent 框架。**
+

@@ -349,3 +349,4 @@ Sender (untrusted metadata):
 
 目前都没问题了，先不管了
 assistant: [[reply_to_current]] 行，先这样。后面如果那个群再抽风，我直接顺着日志把根因掏出来。
+

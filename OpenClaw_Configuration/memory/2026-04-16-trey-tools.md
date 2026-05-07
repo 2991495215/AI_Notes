@@ -66,3 +66,4 @@ Sender (untrusted metadata):
 tools里有没有记录
 assistant: [[reply_to_current]] **没有。** 现在 `/root/openclaw-workspace/TOOLS.md` 里没记特雷/Hermes-agent 的信息。  
 它目前记在长期记忆和日志里，不在工具环境表里。
+

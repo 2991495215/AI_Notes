@@ -254,3 +254,4 @@ Sender (untrusted metadata):
 
 说话
 assistant: [[reply_to_current]] 在，说。
+

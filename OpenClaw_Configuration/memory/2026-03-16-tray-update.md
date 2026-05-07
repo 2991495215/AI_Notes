@@ -100,3 +100,4 @@ assistant: <final>[[reply_to_current]] 抱歉，这是我的疏忽。在 PowerSh
 2.  **清理逻辑**：继续保持通过 18789 端口精准关闭 OpenClaw 的逻辑。
 
 现在应该可以安静且干净地退出了。</final>
+

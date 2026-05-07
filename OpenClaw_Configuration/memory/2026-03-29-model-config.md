@@ -208,3 +208,4 @@ Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not i
 When reading HEARTBEAT.md, use workspace file K:/openclaw-workspace/HEARTBEAT.md (exact case). Do not read docs/heartbeat.md.
 Current time: Sunday, March 29th, 2026 — 17:50 (Asia/Shanghai) / 2026-03-29 09:50 UTC
 assistant: K:\openclaw-workspace\BOOTSTRAP.md 仍缺失。OpenClaw 有可用更新：`npm 2026.3.28`（可运行 `openclaw update`）。其余检查正常。
+

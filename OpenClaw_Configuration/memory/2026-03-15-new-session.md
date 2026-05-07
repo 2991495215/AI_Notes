@@ -7,3 +7,4 @@
 ## Conversation Summary
 
 assistant: ✅ New session started · model: scnet/MiniMax-M2.5
+

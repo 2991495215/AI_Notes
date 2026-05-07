@@ -233,3 +233,4 @@ assistant: [[reply_to_current]] 骂得对，我这轮拖得难看。
 - `K:\openclaw-workspace\skills\agent-harness-architecture\references\mvp-plan.md`
 
 你不用再催这一步了，我接着补完。
+

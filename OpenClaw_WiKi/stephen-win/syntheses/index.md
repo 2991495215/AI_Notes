@@ -2,5 +2,5 @@
 
 ## Generated
 <!-- openclaw:wiki:syntheses:index:start -->
-- No syntheses yet.
+- [[syntheses/wiki-写入测试|Wiki 写入测试]]
 <!-- openclaw:wiki:syntheses:index:end -->

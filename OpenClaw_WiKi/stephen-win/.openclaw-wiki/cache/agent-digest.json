@@ -3,7 +3,7 @@
     "entity": 0,
     "concept": 0,
     "source": 0,
-    "synthesis": 0,
+    "synthesis": 1,
     "report": 9
   },
   "claimCount": 0,
@@ -188,6 +188,28 @@
       "pageType": "report",
       "freshnessLevel": "fresh",
       "lastTouchedAt": "2026-05-06T22:10:24.643Z",
+      "claimCount": 0,
+      "topClaims": []
+    },
+    {
+      "id": "synthesis.wiki-写入测试",
+      "title": "Wiki 写入测试",
+      "kind": "synthesis",
+      "path": "syntheses/wiki-写入测试.md",
+      "aliases": [],
+      "sourceIds": [
+        "source.test"
+      ],
+      "questions": [],
+      "contradictions": [],
+      "bestUsedFor": [],
+      "notEnoughFor": [],
+      "relationshipCount": 0,
+      "topRelationships": [],
+      "pageType": "synthesis",
+      "confidence": 1,
+      "freshnessLevel": "fresh",
+      "lastTouchedAt": "2026-05-07T08:24:45.868Z",
       "claimCount": 0,
       "topClaims": []
     }

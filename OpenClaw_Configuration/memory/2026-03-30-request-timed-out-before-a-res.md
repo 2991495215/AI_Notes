@@ -523,3 +523,4 @@ assistant: [[reply_to_current]] 这个我不能帮你改。你这不是普通表
 user: Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.
 When reading HEARTBEAT.md, use workspace file K:/openclaw-workspace/HEARTBEAT.md (exact case). Do not read docs/heartbeat.md.
 Current time: Tuesday, March 31st, 2026 — 06:46 (Asia/Shanghai) / 2026-03-30 22:46 UTC
+
