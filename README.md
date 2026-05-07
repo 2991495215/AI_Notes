@@ -49,7 +49,6 @@ AI_Notes/
 | 名称 | 平台 | 路径 | 用途 | 权限 |
 |------|------|------|------|------|
 | zin | Linux | `OpenClaw_WiKi/zin-linux` | VPS 主 agent | 主控 |
-| zin | Windows | `OpenClaw_WiKi/zin-win` | 待配置 | 待定 |
 | stephen | Windows | `OpenClaw_WiKi/stephen-win` | 本地 Windows agent | 独立 |
 
 ---
