@@ -385,7 +385,7 @@
       "botToken": "***REDACTED***",
       "groups": {
         "-1003739076714": {
-        "requireMention": false,
+        "requireMention": true,
           "allowFrom": [
             "*"
           ]
