@@ -1,0 +1,616 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.5.6",
+    "lastTouchedAt": "2026-05-07T09:44:45.722Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-05-06T19:16:06.909Z",
+    "lastRunVersion": "2026.5.6",
+    "lastRunCommand": "doctor",
+    "lastRunMode": "local"
+  },
+  "update": {
+    "channel": "beta"
+  },
+  "browser": {
+    "enabled": true,
+    "executablePath": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+    "defaultProfile": "openclaw",
+    "ssrfPolicy": {
+      "dangerouslyAllowPrivateNetwork": true
+    }
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "thirty": {
+        "baseUrl": "https://newapi.thirty30.top/v1",
+        "apiKey": "***REDACTED***",
+        "auth": "api-key",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "gpt-5.4",
+            "name": "gpt-5.4",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "gpt-5.3-codex",
+            "name": "gpt-5.3-codex",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "gemini-2.5-flash",
+            "name": "gemini-2.5-flash",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "gemini-2.5-flash-image",
+            "name": "gemini-2.5-flash-image",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "gpt-5.5",
+            "name": "gpt-5.5",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "claude-sonnet-4-6",
+            "name": "claude-sonnet-4-6",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "deepseek-v3.2",
+            "name": "deepseek-v3.2",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "deepseek-v4-flash",
+            "name": "deepseek-v4-flash",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "deepseek-v4-pro",
+            "name": "deepseek-v4-pro",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "qwen3.6-plus",
+            "name": "qwen3.6-plus",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "qwen3.6-flash",
+            "name": "qwen3.6-flash",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "openrouter/free",
+            "name": "openrouter/free",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "thirty/mimo-v2.5-pro",
+        "fallbacks": [
+          "thirty/gpt-5.4"
+        ]
+      },
+      "imageModel": {
+        "primary": "thirty/gpt-5.4",
+        "fallbacks": []
+      },
+      "workspace": "K:\\openclaw-workspace",
+      "skipBootstrap": false,
+      "memorySearch": {
+        "enabled": true,
+        "provider": "openai",
+        "remote": {
+          "baseUrl": "https://openrouter.ai/api/v1",
+          "apiKey": "***REDACTED***"
+        },
+        "model": "baai/bge-m3"
+      },
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "blockStreamingDefault": "on",
+      "blockStreamingBreak": "text_end",
+      "heartbeat": {
+        "every": "1h",
+        "target": "none",
+        "directPolicy": "block",
+        "lightContext": true,
+        "isolatedSession": true
+      },
+      "imageGenerationModel": {
+        "primary": "google/gemini-3-pro-image-preview"
+      },
+      "contextInjection": "always",
+      "bootstrapMaxChars": 20000,
+      "bootstrapTotalMaxChars": 150000
+    }
+  },
+  "tools": {
+    "profile": "full",
+    "web": {
+      "search": {
+        "enabled": true,
+        "provider": "perplexity"
+      }
+    },
+    "sessions": {
+      "visibility": "all"
+    },
+    "message": {
+      "crossContext": {
+        "allowWithinProvider": true,
+        "allowAcrossProviders": true
+      }
+    },
+    "exec": {
+      "host": "auto",
+      "security": "full",
+      "ask": "off",
+      "notifyOnExitEmptySuccess": true
+    },
+    "fs": {
+      "workspaceOnly": false
+    },
+    "allow": []
+  },
+  "bindings": [
+    {
+      "agentId": "main",
+      "match": {
+        "channel": "telegram",
+        "accountId": "default"
+      }
+    }
+  ],
+  "media": {
+    "preserveFilenames": true
+  },
+  "messages": {
+    "ackReactionScope": "all",
+    "groupChat": {
+      "visibleReplies": "automatic"
+    }
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "text": true,
+    "bash": false,
+    "config": true,
+    "debug": true,
+    "restart": true,
+    "useAccessGroups": true,
+    "ownerDisplay": "raw",
+    "allowFrom": {
+      "telegram": [
+        1690419247
+      ]
+    },
+    "ownerAllowFrom": [
+      "telegram:1690419247"
+    ]
+  },
+  "session": {
+    "dmScope": "per-peer",
+    "idleMinutes": 10080,
+    "scope": "global"
+  },
+  "cron": {
+    "enabled": true
+  },
+  "hooks": {
+    "internal": {
+      "enabled": true,
+      "entries": {
+        "session-memory": {
+          "enabled": true
+        }
+      }
+    }
+  },
+  "channels": {
+    "telegram": {
+      "execApprovals": {
+        "enabled": true,
+        "approvers": [
+          1690419247
+        ],
+        "target": "channel"
+      },
+      "enabled": true,
+      "commands": {
+        "native": true,
+        "nativeSkills": false
+      },
+      "configWrites": true,
+      "dmPolicy": "pairing",
+      "botToken": "***REDACTED***",
+      "groups": {
+        "-1003739076714": {
+        "requireMention": false,
+          "allowFrom": [
+            "*"
+          ]
+        },
+        "-1003983469354": {
+          "requireMention": false,
+          "allowFrom": [
+            "*"
+          ]
+        }
+      },
+      "allowFrom": [
+        1690419247
+      ],
+      "groupPolicy": "open",
+      "streaming": {
+        "mode": "partial"
+      },
+      "retry": {
+        "attempts": 10,
+        "minDelayMs": 5000,
+        "maxDelayMs": 300000,
+        "jitter": 0.2
+      },
+      "proxy": "http://127.0.0.1:7897",
+      "actions": {
+        "reactions": true,
+        "sendMessage": true,
+        "poll": true,
+        "deleteMessage": true,
+        "editMessage": true,
+        "sticker": true,
+        "createForumTopic": true
+      },
+      "heartbeat": {
+        "showOk": false,
+        "showAlerts": false,
+        "useIndicator": true
+      },
+      "linkPreview": false,
+      "defaultAccount": "default",
+      "contextVisibility": "all"
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "auto",
+    "controlUi": {
+      "allowedOrigins": [
+        "file://",
+        "tauri://localhost",
+        "https://tauri.localhost",
+        "http://tauri.localhost",
+        "http://localhost:1420",
+        "http://127.0.0.1:1420"
+      ]
+    },
+    "auth": {
+      "mode": "token",
+      "token": "***REDACTED***",
+      "rateLimit": {
+        "maxAttempts": 10,
+        "windowMs": 60000,
+        "lockoutMs": 300000,
+        "exemptLoopback": true
+      }
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "memory": {
+    "backend": "builtin",
+    "citations": "auto",
+    "qmd": {
+      "includeDefaultMemory": true
+    }
+  },
+  "skills": {
+    "install": {
+      "preferBrew": false,
+      "nodeManager": "npm"
+    },
+    "entries": {
+      "brave-web-search": {
+        "enabled": true
+      },
+      "apify": {
+        "enabled": true,
+        "env": {
+          "APIFY_TOKEN": "***REDACTED***"
+        }
+      },
+      "pdf": {
+        "enabled": true
+      },
+      "tavily-search": {
+        "enabled": true
+      },
+      "pptx": {
+        "enabled": true
+      },
+      "tavily": {
+        "enabled": true,
+        "apiKey": "***REDACTED***"
+      },
+      "find-skills": {
+        "enabled": true
+      },
+      "xlsx": {
+        "enabled": true
+      },
+      "docx": {
+        "enabled": true
+      }
+    }
+  },
+  "plugins": {
+    "allow": [
+      "openclaw-lark",
+      "telegram",
+      "amazon-bedrock",
+      "anthropic",
+      "browser",
+      "byteplus",
+      "chutes",
+      "cloudflare-ai-gateway",
+      "copilot-proxy",
+      "deepseek",
+      "device-pair",
+      "fal",
+      "github-copilot",
+      "google",
+      "huggingface",
+      "kilocode",
+      "kimi",
+      "litellm",
+      "microsoft-foundry",
+      "minimax",
+      "mistral",
+      "moonshot",
+      "nvidia",
+      "ollama",
+      "openai",
+      "opencode",
+      "opencode-go",
+      "openrouter",
+      "phone-control",
+      "qianfan",
+      "sglang",
+      "synthetic",
+      "talk-voice",
+      "together",
+      "venice",
+      "vercel-ai-gateway",
+      "vllm",
+      "volcengine",
+      "xai",
+      "xiaomi",
+      "zai",
+      "memory-core",
+      "perplexity",
+      "memory-wiki"
+    ],
+    "entries": {
+      "openclaw-lark": {
+        "enabled": false
+      },
+      "browser": {
+        "enabled": true
+      },
+      "telegram": {
+        "enabled": true
+      },
+      "google": {
+        "enabled": true
+      },
+      "perplexity": {
+        "enabled": true
+      },
+      "memory-wiki": {
+        "enabled": true,
+        "config": {
+          "vaultMode": "isolated",
+          "vault": {
+            "path": "K:\\openclaw-workspace\\AI_Notes\\OpenClaw_WiKi\\stephen-win",
+            "renderMode": "obsidian"
+          },
+          "obsidian": {
+            "enabled": true,
+            "useOfficialCli": true,
+            "vaultName": "AI_Notes",
+            "openAfterWrites": false
+          },
+          "bridge": {
+            "enabled": false,
+            "readMemoryArtifacts": true,
+            "indexDreamReports": true,
+            "indexDailyNotes": true,
+            "indexMemoryRoot": true,
+            "followMemoryEvents": true
+          },
+          "ingest": {
+            "autoCompile": true,
+            "maxConcurrentJobs": 1,
+            "allowUrlIngest": true
+          },
+          "search": {
+            "backend": "local",
+            "corpus": "wiki"
+          },
+          "context": {
+            "includeCompiledDigestPrompt": false
+          },
+          "render": {
+            "preserveHumanBlocks": true,
+            "createBacklinks": true,
+            "createDashboards": true
+          }
+        }
+      }
+    },
+    "bundledDiscovery": "allowlist"
+  }
+}
+

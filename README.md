@@ -19,7 +19,9 @@ AI_Notes/
 ├── 90_计划/                # 规划和待办
 ├── 99_系统/                # 系统配置、模板、提示词、归档
 ├── OpenClaw_WiKi/          # 各 agent 的 Memory-Wiki
-├── OpenClaw_Configuration/ # OpenClaw 配置备份（自动同步）
+├── OpenClaw_Configuration/ # 各 agent 配置备份（自动同步）
+│   ├── stephen-win/        # stephen 配置 + memory
+│   └── zin-linux/          # zin 配置 + memory
 └── .agents/skills/         # 技能脚本
 ```
 
@@ -231,3 +233,4 @@ rsync -av --update /root/openclaw-workspace/memory/ /root/openclaw-workspace/AI_
 
 *最后更新：2026-05-07*
 *维护者：小耗子*
+
